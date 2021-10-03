@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+
+* { 
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color:white;
+    }
+    
+
+h1{
+  font-family: 'Grechen Fuemen', cursive;
+  font-size: 200px;
+  text-align: center;
+  color: #6F4C5B;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+
+iframe{
+   width: 100%; 
+   max-height: auto;
+   justify-content: center;
+}
+
+a{
+    color: #6F4C5B;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.navItem{
+   color: #6F4C5B;
+   list-style: none; 
+   display: inline;
+   margin-right: 15px;
+   line-height: 10;
+}
+
+#image{
+    width: 200px;
+}
+
+p {
+  width: 200px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 40px;
+  color: #6F4C5B;
+  font-size: 18px;
+}
+
+.btn{
+    color: white;
+    background: #6F4C5B;
+    border: 1px solid lightgray;
+    width: 25%;
+    cursor: pointer;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.form{
+    border: 1px solid #9E7777;
+    background-color: #9E7777;
+    opacity: 0.5;
+    border-radius: 10px;
+    max-width: 50%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formContainer{
+    width: 100%;   
+    margin-left: 25%;
+}
+
+.form h2{
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: black;
+    background-color: #9E7777; 
+  }
+ 
+.form input, select{
+      inline-size: 90%;
+      border:1px solid lightgray ;
+      color:grey;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-block-end:24px;
+}
+
+
+.info {
+  background-color: white;
+  text-align: center;
+  height: 25px;
+}
+
+
+.form input[type="submit"]{
+    color: white;
+    background: black;
+    border: 1px solid lightgray;
+    width: 25%;
+    height: 30px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  footer:hover{
+    height: 30px;
+    font-size: 120%;
+  }
+
+.followUs{
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px; 
+}
+
+.followUs h2{
+        font-size: 24px;
+        opacity: 0.5;
+        letter-spacing: 4px;
+        color:black;
+}
+
+.links{
+    list-style-type: none;
+    line-height: 2;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 640px) {
+
+  #navList{
+     margin-right:0%;
+     margin-left: 35%;
+     display: inline;
+   }
+
+  h1{
+    width: 100%;
+  }
+
+  body{
+    max-width: 80%;
+    padding:0
+  }  
+
+
+  img{
+     max-width: 100%;
+     margin: 50px;
+  }
+
+  video{
+    max-width: 100%;
+    margin-left: 12%;
+  }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style4.css" />
+    <title>Comfy</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Comfy</h1>
+      <nav>
+        <ul id="navList">
+          <li class="navItem"><a href="#">Home</a></li>
+          <li class="navItem"><a href="#catalogue">Products</a></li>
+          <li class="navItem"><a href="#form">Newsletter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <iframe loop autoplay width="600" height="400" src="https://www.youtube.com/embed/zvuKtTX7N5I" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
+    <div class="row" id="catalogue"></div>
+    
+    <template id="template-card">
+      <div class="col-3 mb-2">
+        <div class="card">
+          <div class="card-body">
+            <h5 id="productTitle">Title</h5>
+            <img id="image" src="" alt=""></img>
+            <p id="price">Price</p>
+            <button id="button" class="btn btn-dark">Add</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+
+    <div class="container">
+      <h4>Shopping Cart</h4>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Item</th>
+            <th scope="col">Amount</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody id="items"></tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Empty</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <template id="template-shopping-cart">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total</th>
+      <td>10</td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+
+    <div class="formContainer">
+      <form action="" class="form" id="pay" onsubmit="">
+        <h2>Payment</h2>
+        <input class="info" id="name" type="text" placeholder="Enter your name" required/>
+        <input class="info" id="email" type="email" placeholder="Enter e-mail" required/>
+        <input class="info" id="payment-card" type="number" placeholder="Enter your card number" required/>
+        <input class="info" id="date" type="date" placeholder="Enter due date" required/>
+        <input class="info" id="cvv" type="number" placeholder="CVV" required/>
+        <input class="info" id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="formContainer">
+      <form action="" class="form" id="form" onsubmit="">
+        <h2>Suscribe to our newsletter</h2>
+        <input class="info" id="email" type="email" placeholder="Enter e-mail" required/>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+
+    <section class="followUs">
+      <h2>Follow us</h2>
+      <ul class="links">
+        <li><a href="#" target="_blank">Twitter</a></li>
+        <li><a href="#" target="_blank">Youtube</a></li>
+        <li><a href="#" target="_blank">Instagram</a></li>
+        <li><a href="#" target="_blank">Facebook</a></li>
+      </ul>
+    </section>
+
+    <footer>&copy; All rights reserved</footer>
+
+    <script src="script4.js" type="module"></script>
+    <script src="data4.js" type="module"></script>
+
+  </body>
+</html>
